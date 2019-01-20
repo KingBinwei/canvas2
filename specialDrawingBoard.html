@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Special Drawing Board</title>
+    <meta name="description" content="Fixing tabindex">
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body>
+  <div class="palette">
+    <header class="header">
+      <div class="header_inner">
+        <img class="header_logo" src="images/palette.jpg" alt="iconic view of a palette">
+        <h1 class="header_title">
+          Special Drawing Board
+        </h1>
+        <img class="header_warning" src="images/warning.jpg" alt="a button of warning"> 
+    </header>
+
+    <main>
+        <canvas id="drawing" width="451" height="451"></canvas>
+    </main>
+  </div>
+
+  <div class="modal" role="dialog" aria-labelledby="warning">
+    <h1 id="warning">Direction For Use</h1>
+    <p>鼠标点击左键：程序在面板鼠标点击位置绘制边长为20px的正方形；鼠标点击右键：程序在面板鼠标点击位置绘制半径为10px的圆。</p>
+    <button id="close">I think</button>
+  </div>
+  <div class="modal-overlay"></div>
+  <script src="javascripts/modal.js"></script>
+  <script src="javascripts/canvas.js"></script>
+  </body>
+</html>

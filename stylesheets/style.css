@@ -1,0 +1,102 @@
+body, html {
+  	margin: 0;
+  	padding: 0;
+  	width: 100%;
+  	height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.modal {
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+  background-color: #fff;
+  z-index: 3; /* places the modal on top of everything */
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 0;
+  width: 500px;
+  display: none;
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* places the modalOverlay between the main page and the modal dialog */
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+#warning {
+  color: #6495ed;
+}
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header_inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.header_title {
+  font-weight: 300;
+  font-size: 2.5em;
+  margin: 0.75em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+
+.header_warning {
+  float: right;
+  height: 30px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 40px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
+}
+
+@media screen and (max-width: 610px) {
+  .header_logo {
+    height: 48px;
+    margin-right: 0.5em;/* 设置logo大小 */
+  }
+  .header_title {
+    margin-left: 0;
+    font-size: 1.65em;
+    vertical-align: bottom; 
+  }
+  .header_warning {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  main, .header_inner {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
