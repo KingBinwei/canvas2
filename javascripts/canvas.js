@@ -13,4 +13,4 @@ function paintGreen(imageData) {
 	}
 	ctx.putImageData(imageData, 0, 0);
 }
-paintGreen(data)
+paintGreen(data);
